@@ -1,4 +1,199 @@
-<!doctype html><meta charset="utf-8">
-<title>Elton Ugbogu</title>
-<h1>Elton Ugbogu</h1>
-<p>Bioinformatics & ML portfolio site.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Elton Ugbogu — Bioinformatics & ML</title>
+  <meta name="description" content="A clean, modern portfolio about machine learning, bioinformatics, and cancer classification—DeepMind-inspired look." />
+  <style>
+    :root{
+      --bg:#ffffff; --ink:#0e141b; --muted:#4b5563; --line:#e7edf5; --card:#f7fafc;
+      --acc:#0b57d0; --acc-ink:#ffffff; --grad1:#57c1ff; --grad2:#2b86c5;
+      --rad:18px; --rad-sm:12px; --max:1120px; --shadow:0 10px 30px rgba(0,0,0,.06);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0; padding:0}
+    body{font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Inter,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.6}
+    a{color:var(--acc); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
+    header{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    nav a{margin-left:18px; font-weight:600}
+    .hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center; margin-top:24px}
+    .card{background:var(--card); border-radius:var(--rad); box-shadow:var(--shadow); border:1px solid var(--line)}
+    .pad{padding:28px}
+    h1{font-size:44px; line-height:1.08; margin:0 0 10px}
+    p.lead{font-size:18px; color:var(--muted); margin-top:6px}
+    .cta{display:flex; gap:12px; margin-top:18px; flex-wrap:wrap}
+    .btn{display:inline-flex; align-items:center; gap:10px; padding:12px 16px; border-radius:12px; font-weight:700; border:2px solid var(--acc); color:var(--acc); background:#fff}
+    .btn.primary{background:var(--acc); color:var(--acc-ink)}
+    .panel{height:100%; display:flex; align-items:center; justify-content:center; border-radius:var(--rad); position:relative; overflow:hidden}
+    .grad{position:absolute; inset:0; background:linear-gradient(135deg,var(--grad1),var(--grad2)); opacity:.12}
+    .grid{display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:18px}
+    .tile{border-radius:var(--rad); border:1px solid var(--line); background:#fff}
+    .tile .pad{padding:22px}
+    .pill{display:inline-flex; gap:8px; align-items:center; background:rgba(11,87,208,.08); color:#0b57d0; padding:4px 10px; border-radius:999px; font-size:12px; font-weight:700}
+    h2{font-size:26px; margin:0 0 8px}
+    section{margin-top:38px}
+    .small{font-size:14px; color:var(--muted)}
+    .twocol{display:grid; grid-template-columns: 1fr 1fr; gap:18px}
+    .list{display:grid; gap:10px; margin:0; padding-left:18px}
+    .list li{margin:0}
+    footer{margin-top:48px; color:var(--muted); font-size:14px}
+    .avatar{width:56px; height:56px; border-radius:50%; background:linear-gradient(135deg,var(--grad1),var(--grad2)); box-shadow: var(--shadow); border:2px solid #fff}
+    .rule{height:1px; background:var(--line); margin:16px 0}
+    @media (max-width: 920px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr} .twocol{grid-template-columns:1fr} }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div style="display:flex;align-items:center;gap:12px;">
+        <div class="avatar" aria-hidden="true"></div>
+        <strong>Elton Ugbogu</strong>
+      </div>
+      <nav>
+        <a href="#ml">Machine Learning</a>
+        <a href="#bioinformatics">Bioinformatics</a>
+        <a href="#cancer">Cancer Classification</a>
+        <a href="#about">About</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card pad">
+        <h1>Clean ideas. Clear science.</h1>
+        <p class="lead">
+          A modern, fast, and minimal space for exploring
+          <strong>machine learning</strong>, <strong>bioinformatics</strong>, and <strong>cancer classification</strong> —
+          inspired by the calm, spacious aesthetic of DeepMind.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#ml">Explore topics</a>
+          <a class="btn" href="#about">About me</a>
+        </div>
+        <p class="small" style="margin-top:10px">
+          Studying Bioinformatics at Universität Potsdam · I love ML.
+        </p>
+      </div>
+      <div class="panel card">
+        <div class="grad" aria-hidden="true"></div>
+        <div class="pad">
+          <div class="pill">Quick look</div>
+          <h2 style="margin:10px 0 6px">What’s inside</h2>
+          <ul class="list small">
+            <li>Plain-English intros to ML ideas (no heavy math required).</li>
+            <li>How sequence data becomes features you can learn from.</li>
+            <li>Why cancer types have distinct expression “signatures”.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- MACHINE LEARNING -->
+    <section id="ml">
+      <h2>Machine Learning — the tiny tour</h2>
+      <div class="grid">
+        <article class="tile">
+          <div class="pad">
+            <span class="pill">Concept</span>
+            <h3>Patterns, not programs</h3>
+            <p class="small">ML discovers rules from examples. Instead of hand-coding every rule, we fit models that generalize from data.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="pad">
+            <span class="pill">Practice</span>
+            <h3>Train → Validate → Test</h3>
+            <p class="small">Split data, tune on validation, hold out a final test. Reliable evaluation beats lucky results.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="pad">
+            <span class="pill">Fun fact</span>
+            <h3>Bias–Variance vibes</h3>
+            <p class="small">Too simple → misses patterns; too complex → memorizes noise. Sweet spot = best real-world performance.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- BIOINFORMATICS -->
+    <section id="bioinformatics" class="twocol">
+      <div class="card pad">
+        <h2>Bioinformatics — data into discovery</h2>
+        <p class="small">
+          From raw sequences to interpretable signals: QC, alignment, counting, and normalization turn biology into tidy tables
+          that ML can learn from.
+        </p>
+        <div class="rule"></div>
+        <ul class="list small">
+          <li><strong>Features:</strong> genes, transcripts, variants, pathways</li>
+          <li><strong>Normalizing:</strong> TPM, VST, TMM — scale data for fair comparisons</li>
+          <li><strong>Reproducibility:</strong> workflows make results reliable & shareable</li>
+        </ul>
+      </div>
+      <div class="card pad">
+        <h2>Friendly glossary</h2>
+        <ul class="list small">
+          <li><strong>Feature matrix:</strong> rows = samples, columns = features.</li>
+          <li><strong>Label:</strong> what we want to predict (e.g., tumor type).</li>
+          <li><strong>Cross-validation:</strong> multiple train/test splits to estimate performance.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CANCER CLASSIFICATION -->
+    <section id="cancer">
+      <h2>Cancer classification — signals of origin</h2>
+      <div class="grid">
+        <article class="tile">
+          <div class="pad">
+            <span class="pill">Idea</span>
+            <h3>Tissue “accents”</h3>
+            <p class="small">Gene expression carries a tissue accent — useful for telling cancer types apart when models listen carefully.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="pad">
+            <span class="pill">Approach</span>
+            <h3>From signatures to scores</h3>
+            <p class="small">Turn thousands of genes into compact signatures, train a classifier, and score how confidently it recognizes each class.</p>
+          </div>
+        </article>
+        <article class="tile">
+          <div class="pad">
+            <span class="pill">Trust</span>
+            <h3>Robustness matters</h3>
+            <p class="small">Evaluate across splits and cohorts. Calibrate probabilities so high scores actually mean higher odds.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card pad">
+      <h2>About</h2>
+      <p class="small">
+        I’m studying Bioinformatics at Universität Potsdam and I love machine learning.
+        This site is a calm place to share approachable ideas and small demos without overwhelming details.
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card pad">
+      <h2>Contact</h2>
+      <p class="small">
+        For a quick hello: <a href="mailto:contact@eltonugbogu.com">contact@eltonugbogu.com</a>
+      </p>
+    </section>
+
+    <footer>
+      <p>© <span id="y"></span> Elton Ugbogu · Hosted on GitHub Pages</p>
+    </footer>
+  </div>
+  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+</body>
+</html>
+
