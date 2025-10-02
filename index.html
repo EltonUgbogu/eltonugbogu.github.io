@@ -1,3 +1,4 @@
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -5,6 +6,9 @@
   <title data-en="Elton Ugbogu — ML · Bioinformatics · Cancer Biology" data-de="Elton Ugbogu — ML · Bioinformatik · Krebsbiologie">Elton Ugbogu — ML · Bioinformatics · Cancer Biology</title>
   <meta name="description" content="A calm, modern space about machine learning, bioinformatics, and cancer biology — with a dash of quantum ML." />
   <link rel="canonical" href="https://eltonugbogu.com/">
+  <link rel="alternate" hreflang="en" href="https://eltonugbogu.com/" />
+  <link rel="alternate" hreflang="de" href="https://eltonugbogu.com/" />
+  <link rel="alternate" hreflang="x-default" href="https://eltonugbogu.com/" />
   <meta name="theme-color" content="#0f172a" />
   <meta name="language" content="en" />
   <meta name="geo.region" content="DE" />
@@ -16,6 +20,7 @@
   <meta property="og:description" content="Projects, research, and contact — plus a dash of quantum ML." />
   <meta property="og:url" content="https://eltonugbogu.com/" />
   <meta property="og:image" content="https://eltonugbogu.com/assets/og.jpg" />
+  <meta property="og:site_name" content="Elton Ugbogu" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:locale:alternate" content="de_DE" />
 
@@ -123,7 +128,16 @@
   <div class="wrap">
     <header>
       <div style="display:flex;align-items:center;gap:12px;">
-        <img src="logo.png" alt="Elton Ugbogu logo" class="avatar" loading="lazy" decoding="async" style="width:56px; height:56px; border-radius:50%; object-fit:cover;">
+        <img
+          src="logo.png"
+          alt="Elton Ugbogu logo"
+          class="avatar"
+          loading="lazy"
+          decoding="async"
+          width="56"
+          height="56"
+          style="width:56px; height:56px; border-radius:50%; object-fit:cover;"
+        />
         <strong>Elton Ugbogu</strong>
       </div>
       <nav>
@@ -132,7 +146,11 @@
         <a href="#cancer-bio" data-en="Cancer Biology" data-de="Krebsbiologie">Cancer Biology</a>
         <a href="#qml" data-en="Quantum ML" data-de="Quanten-ML">Quantum ML</a>
         <a href="#about" data-en="About" data-de="Über mich">About</a>
-        <button id="lang-switch" style="margin-left:18px; background:none; border:none; color:var(--muted); font-weight:600; cursor:pointer; font-size:inherit; font-family:inherit;" onclick="toggleLanguage()">DE</button>
+        <button id="lang-switch"
+          type="button"
+          aria-label="Switch language"
+          style="margin-left:18px; background:none; border:none; color:var(--muted); font-weight:600; cursor:pointer; font-size:inherit; font-family:inherit;"
+          onclick="toggleLanguage()">DE</button>
       </nav>
     </header>
 
@@ -275,7 +293,7 @@
         poster="/assets/elton_poster.jpg"
         style="max-width: 100%; height: auto; border-radius: var(--rad); box-shadow: var(--shadow); border: 1px solid var(--line);">
         <source src="/eltonugbogu_visualization.mp4" type="video/mp4" />
-        <span data-en="Your browser does not support the video tag." data-de="Ihr Browser unterstützt das Video-Tag nicht.">Your browser does not support the video tag.</span>
+        Your browser does not support the video tag.
       </video>
     </section>
 
