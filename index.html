@@ -1,67 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Elton Ugbogu — ML · Bioinformatics · Cancer Biology</title>
+
+  <title data-en="Elton Ugbogu — ML · Bioinformatics · Cancer Biology" data-de="Elton Ugbogu — ML · Bioinformatik · Krebsbiologie">Elton Ugbogu — ML · Bioinformatics · Cancer Biology</title>
   <meta name="description" content="A calm, modern space about machine learning, bioinformatics, and cancer biology — with a dash of quantum ML." />
   <link rel="canonical" href="https://eltonugbogu.com/">
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="language" content="en" />
+  <meta name="geo.region" content="DE" />
+  <meta name="geo.country" content="Germany" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Elton Ugbogu — ML · Bioinformatics · Cancer Biology" />
+  <meta property="og:description" content="Projects, research, and contact — plus a dash of quantum ML." />
+  <meta property="og:url" content="https://eltonugbogu.com/" />
+  <meta property="og:image" content="https://eltonugbogu.com/assets/og.jpg" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Elton Ugbogu — ML · Bioinformatics · Cancer Biology" />
+  <meta name="twitter:description" content="Projects, research, and contact — plus a dash of quantum ML." />
+  <meta name="twitter:image" content="https://eltonugbogu.com/assets/og.jpg" />
+
+  <!-- Sitemap hint -->
+  <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+
+  <!-- Identity (helps search associate profiles with you) -->
+  <link rel="me" href="https://github.com/EltonUgbogu" />
+  <link rel="me" href="https://www.linkedin.com/in/elton-ugbogu" />
+
+  <!-- Structured data -->
   <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Elton Ugbogu",
-  "alternateName": ["Ugbogu Elton"],
-  "givenName": "Elton",
-  "familyName": "Ugbogu",
-  "url": "https://eltonugbogu.com",
-  "email": "mailto:contact@eltonugbogu.com",
-  "image": "https://eltonugbogu.com/assets/portrait.jpg",
-  "jobTitle": "Bioinformatics Researcher / Master's Student",
-  "affiliation": [{
-    "@type": "Organization",
-    "name": "University of Potsdam"
-  },{
-    "@type": "Organization",
-    "name": "Leibniz Institute DSMZ"
-  }],
-  "sameAs": [
-    "https://www.linkedin.com/in/eltonugbogu",
-    "https://github.com/EltonUgbogu",
-    "https://scholar.google.com/citations?user=YOUR_ID",
-    "https://orcid.org/YOUR_ORCID"
-  ],
-  "knowsLanguage": ["en", "yo", "de"]
-}
-</script>
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elton Ugbogu",
+    "alternateName": ["Ugbogu Elton"],
+    "givenName": "Elton",
+    "familyName": "Ugbogu",
+    "url": "https://eltonugbogu.com",
+    "email": "mailto:contact@eltonugbogu.com",
+    "image": "https://eltonugbogu.com/assets/portrait.jpg",
+    "jobTitle": "Bioinformatics Researcher / Master's Student",
+    "affiliation": [
+      {"@type": "Organization","name": "University of Potsdam"},
+      {"@type": "Organization","name": "Leibniz Institute DSMZ"}
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/in/elton-ugbogu",
+      "https://github.com/EltonUgbogu",
+      "https://scholar.google.com/citations?user=YOUR_ID",
+      "https://orcid.org/YOUR_ORCID"
+    ],
+    "knowsLanguage": ["en", "yo", "de"]
+  }
+  </script>
+
   <style>
     :root{
-      --bg:#0a0a0a; /* Glossy dark black base */
-      --ink:#f8fafc; /* Crisp white text for contrast */
-      --muted:#94a3b8; /* Muted text with blue tint */
-      --line:#1e293b; /* Dark blue-gray lines */
-      --card:#111827; /* Glossy dark card background */
-      --acc:#3b82f6; /* Bright blue accent */
-      --acc-ink:#ffffff; /* White ink on accent */
-      --grad1:#1e40af; /* Deep glossy blue */
-      --grad2:#0f172a; /* Dark glossy black-blue */
+      --bg:#0a0a0a; --ink:#f8fafc; --muted:#94a3b8; --line:#1e293b; --card:#111827;
+      --acc:#3b82f6; --acc-ink:#ffffff; --grad1:#1e40af; --grad2:#0f172a;
       --rad:18px; --rad-sm:12px; --max:1120px;
-      --shadow:0 20px 40px rgba(0,0,0,.6), 0 0 0 1px rgba(59,130,246,.1); /* Enhanced glossy shadow */
+      --shadow:0 20px 40px rgba(0,0,0,.6), 0 0 0 1px rgba(59,130,246,.1);
     }
     html, body {
-      margin: 0;
-      padding: 0;
+      margin:0; padding:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Inter, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.6;
-      /* Glossy dark black and blue background */
-      background: 
+      color: var(--ink); background: var(--bg); line-height: 1.6;
+      background:
         radial-gradient(circle at 20% 20%, var(--grad1) 0%, transparent 50%),
         radial-gradient(circle at 80% 80%, var(--grad2) 0%, transparent 50%),
         radial-gradient(circle at 40% 60%, rgba(30,64,175,0.1) 0%, transparent 40%),
         linear-gradient(135deg, var(--bg) 0%, #0f172a 100%);
-      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
       background-attachment: fixed;
     }
     *{box-sizing:border-box}
@@ -69,8 +82,8 @@
     .wrap{max-width:var(--max); margin:0 auto; padding:28px 18px 80px}
     header{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
     nav a{margin-left:18px; font-weight:600; color:var(--muted)} nav a:hover{color:var(--acc); text-decoration:none;}
-    .hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center; margin-top:24px}
-    .card{background:var(--card); border-radius:var(--rad); box-shadow:var(--shadow); border:1px solid var(--line); backdrop-filter: blur(10px); position: relative; overflow: hidden;}
+    .hero{display:grid; grid-template-columns:1.1fr .9fr; gap:28px; align-items:center; margin-top:24px}
+    .card{background:var(--card); border-radius:var(--rad); box-shadow:var(--shadow); border:1px solid var(--line); backdrop-filter: blur(10px); position:relative; overflow:hidden;}
     .pad{padding:28px}
     h1{font-size:44px; line-height:1.08; margin:0 0 10px; color:var(--ink)}
     p.lead{font-size:18px; color:var(--muted); margin-top:6px}
@@ -80,7 +93,7 @@
     .btn.primary{background:var(--acc); color:var(--acc-ink); border-color:var(--acc);}
     .btn.primary:hover{background:var(--grad1); border-color:var(--grad1);}
     .panel{height:100%; display:flex; align-items:center; justify-content:center; border-radius:var(--rad); position:relative; overflow:hidden}
-    .grad{position:absolute; inset:0; background:linear-gradient(135deg,var(--grad1),var(--grad2)); opacity:.22} /* Increased opacity for effect */
+    .grad{position:absolute; inset:0; background:linear-gradient(135deg,var(--grad1),var(--grad2)); opacity:.22}
     .grid{display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:18px}
     .tile{border-radius:var(--rad); border:1px solid var(--line); background:var(--card); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; backdrop-filter: blur(10px); position: relative; overflow: hidden;}
     .tile:hover {transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,.7), 0 0 0 1px rgba(59,130,246,.2); border-color: rgba(59,130,246,.3);}
@@ -93,194 +106,238 @@
     .list{display:grid; gap:10px; margin:0; padding-left:18px}
     .list li{margin:0}
     footer{margin-top:48px; color:var(--muted); font-size:14px}
-    .avatar{width:56px; height:56px; border-radius:50%; background:linear-gradient(135deg,var(--grad1),var(--grad2)); box-shadow: var(--shadow); border:2px solid var(--acc);} /* Accent border for avatar */
+    .avatar{width:56px; height:56px; border-radius:50%; background:linear-gradient(135deg,var(--grad1),var(--grad2)); box-shadow: var(--shadow); border:2px solid var(--acc);}
     .rule{height:1px; background:var(--line); margin:16px 0}
+    .image-section { margin-top:38px; text-align:center; }
+    .image-section img { max-width:100%; height:auto; border-radius:var(--rad); box-shadow:var(--shadow); border:1px solid var(--line); }
 
-    /* Added for the image */
-    .image-section {
-      margin-top: 38px;
-      text-align: center;
+    /* Respect reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
     }
-    .image-section img {
-      max-width: 100%;
-      height: auto;
-      border-radius: var(--rad);
-      box-shadow: var(--shadow);
-      border: 1px solid var(--line);
-    }
-    
-    @media (max-width: 920px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr} .twocol{grid-template-columns:1fr} }
+
+    @media (max-width:920px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr} .twocol{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
       <div style="display:flex;align-items:center;gap:12px;">
-        <img src="logo.png" alt="Elton Ugbogu Logo" class="avatar" style="width:56px; height:56px; border-radius:50%; object-fit:cover;">
+        <img src="logo.png" alt="Elton Ugbogu logo" class="avatar" loading="lazy" decoding="async" style="width:56px; height:56px; border-radius:50%; object-fit:cover;">
         <strong>Elton Ugbogu</strong>
       </div>
       <nav>
-        <a href="#ml">Machine Learning</a>
-        <a href="#bio">Bioinformatics</a>
-        <a href="#cancer-bio">Cancer Biology</a>
-        <a href="#qml">Quantum ML</a>
-        <a href="#about">About</a>
+        <a href="#ml" data-en="Machine Learning" data-de="Maschinelles Lernen">Machine Learning</a>
+        <a href="#bio" data-en="Bioinformatics" data-de="Bioinformatik">Bioinformatics</a>
+        <a href="#cancer-bio" data-en="Cancer Biology" data-de="Krebsbiologie">Cancer Biology</a>
+        <a href="#qml" data-en="Quantum ML" data-de="Quanten-ML">Quantum ML</a>
+        <a href="#about" data-en="About" data-de="Über mich">About</a>
+        <button id="lang-switch" style="margin-left:18px; background:none; border:none; color:var(--muted); font-weight:600; cursor:pointer; font-size:inherit; font-family:inherit;" onclick="toggleLanguage()">DE</button>
       </nav>
     </header>
 
     <section class="hero">
       <div class="card pad">
-        <h1>Concise Ideas. Clear science.</h1>
-        <p class="lead">
+        <h1 data-en="Concise Ideas. Clear science." data-de="Prägnante Ideen. Klare Wissenschaft.">Concise Ideas. Clear science.</h1>
+        <p class="lead" data-en="A space for exploring <strong>machine learning</strong>, <strong>bioinformatics</strong>, and <strong>cancer biology</strong> — with room for playful curiosity" data-de="Ein Raum für die Erkundung von <strong>Maschinellem Lernen</strong>, <strong>Bioinformatik</strong> und <strong>Krebsbiologie</strong> — mit Platz für spielerische Neugier">
           A space for exploring <strong>machine learning</strong>, <strong>bioinformatics</strong>, and <strong>cancer biology</strong> — with room for playful curiosity
         </p>
         <div class="cta">
-          <a class="btn primary" href="#ml">Explore topics</a>
-          <a class="btn" href="#about">About</a>
+          <a class="btn primary" href="#ml" data-en="Explore topics" data-de="Themen erkunden">Explore topics</a>
+          <a class="btn" href="#about" data-en="About" data-de="Über mich">About</a>
         </div>
       </div>
       <div class="panel card">
         <div class="grad" aria-hidden="true"></div>
         <div class="pad">
-          <div class="pill">Quick look</div>
-          <h2 style="margin:10px 0 6px">What’s inside</h2>
+          <div class="pill" data-en="Quick look" data-de="Schneller Blick">Quick look</div>
+          <h2 style="margin:10px 0 6px" data-en="What's inside" data-de="Was drin ist">What's inside</h2>
           <ul class="list small">
-            <li>Plain-English ML concepts: how models learn patterns (and avoid overfitting).</li>
-            <li>How sequencing data becomes features you can actually learn from.</li>
-            <li>Understanding the intricate world of cellular dysfunction and growth.</li>
+            <li data-en="Plain-English ML concepts: how models learn patterns (and avoid overfitting)." data-de="ML-Konzepte in einfacher Sprache: wie Modelle Muster lernen (und Überanpassung vermeiden).">Plain-English ML concepts: how models learn patterns (and avoid overfitting).</li>
+            <li data-en="How sequencing data becomes features you can actually learn from." data-de="Wie Sequenzierungsdaten zu Merkmalen werden, aus denen man tatsächlich lernen kann.">How sequencing data becomes features you can actually learn from.</li>
+            <li data-en="Understanding the intricate world of cellular dysfunction and growth." data-de="Das komplexe Verständnis der zellulären Dysfunktion und des Wachstums.">Understanding the intricate world of cellular dysfunction and growth.</li>
           </ul>
         </div>
       </div>
     </section>
 
     <section id="ml">
-      <h2>Machine Learning — the tiny tour</h2>
+      <h2 data-en="Machine Learning — the tiny tour" data-de="Maschinelles Lernen — die kleine Tour">Machine Learning — the tiny tour</h2>
       <div class="grid">
         <article class="tile"><div class="pad">
-          <span class="pill">Concept</span>
-          <h3>Patterns, not programs</h3>
-          <p class="small">Instead of hard-coding rules, ML fits functions to examples and generalizes to new data.</p>
+          <span class="pill" data-en="Concept" data-de="Konzept">Concept</span>
+          <h3 data-en="Patterns, not programs" data-de="Muster, nicht Programme">Patterns, not programs</h3>
+          <p class="small" data-en="Instead of hard-coding rules, ML fits functions to examples and generalizes to new data." data-de="Anstatt Regeln fest zu programmieren, passt ML Funktionen an Beispiele an und verallgemeinert auf neue Daten.">Instead of hard-coding rules, ML fits functions to examples and generalizes to new data.</p>
         </div></article>
         <article class="tile"><div class="pad">
-          <span class="pill">Practice</span>
-          <h3>Train · Validate · Test</h3>
-          <p class="small">Split wisely; tune on validation; keep a clean test set. Reliable evaluation beats lucky results.</p>
+          <span class="pill" data-en="Practice" data-de="Praxis">Practice</span>
+          <h3 data-en="Train · Validate · Test" data-de="Trainieren · Validieren · Testen">Train · Validate · Test</h3>
+          <p class="small" data-en="Split wisely; tune on validation; keep a clean test set. Reliable evaluation beats lucky results." data-de="Klug aufteilen; auf Validierung abstimmen; sauberen Testsatz behalten. Zuverlässige Bewertung schlägt glückliche Ergebnisse.">Split wisely; tune on validation; keep a clean test set. Reliable evaluation beats lucky results.</p>
         </div></article>
         <article class="tile"><div class="pad">
-          <span class="pill">Intuition</span>
-          <h3>Bias–Variance balance</h3>
-          <p class="small">Too simple misses patterns; too complex memorizes noise. The sweet spot generalizes best.</p>
+          <span class="pill" data-en="Intuition" data-de="Intuition">Intuition</span>
+          <h3 data-en="Bias–Variance balance" data-de="Bias–Varianz-Balance">Bias–Variance balance</h3>
+          <p class="small" data-en="Too simple misses patterns; too complex memorizes noise. The sweet spot generalizes best." data-de="Zu einfach verpasst Muster; zu komplex merkt sich Rauschen. Der Sweet Spot verallgemeinert am besten.">Too simple misses patterns; too complex memorizes noise. The sweet spot generalizes best.</p>
         </div></article>
       </div>
     </section>
 
     <section id="bio" class="twocol">
       <div class="card pad">
-        <h2>Bioinformatics — data into discovery</h2>
-        <p class="small">
+        <h2 data-en="Bioinformatics — data into discovery" data-de="Bioinformatik — Daten zu Entdeckungen">Bioinformatics — data into discovery</h2>
+        <p class="small" data-en="From raw reads to tidy tables: QC → alignment → quantification → normalization → interpretation." data-de="Von rohen Reads zu ordentlichen Tabellen: QC → Alignment → Quantifizierung → Normalisierung → Interpretation.">
           From raw reads to tidy tables: QC → alignment → quantification → normalization → interpretation.
         </p>
         <div class="rule"></div>
         <ul class="list small">
-          <li><strong>Features:</strong> genes, transcripts, variants, pathways.</li>
-          <li><strong>Normalization:</strong> methods like TPM, VST, and TMM make samples comparable.</li>
-          <li><strong>Reproducibility:</strong> workflows keep results reliable and shareable.</li>
+          <li data-en="<strong>Features:</strong> genes, transcripts, variants, pathways." data-de="<strong>Merkmale:</strong> Gene, Transkripte, Varianten, Signalwege."><strong>Features:</strong> genes, transcripts, variants, pathways.</li>
+          <li data-en="<strong>Normalization:</strong> methods like TPM, VST, and TMM make samples comparable." data-de="<strong>Normalisierung:</strong> Methoden wie TPM, VST und TMM machen Proben vergleichbar."><strong>Normalization:</strong> methods like TPM, VST, and TMM make samples comparable.</li>
+          <li data-en="<strong>Reproducibility:</strong> workflows keep results reliable and shareable." data-de="<strong>Reproduzierbarkeit:</strong> Workflows halten Ergebnisse zuverlässig und teilbar."><strong>Reproducibility:</strong> workflows keep results reliable and shareable.</li>
         </ul>
       </div>
       <div class="card pad">
-        <h2>Friendly glossary</h2>
+        <h2 data-en="Friendly glossary" data-de="Freundliches Glossar">Friendly glossary</h2>
         <ul class="list small">
-          <li><strong>Feature matrix:</strong> rows = samples; columns = features.</li>
-          <li><strong>Label:</strong> the thing we predict (e.g., tumor type).</li>
-          <li><strong>Cross-validation:</strong> repeated splits to estimate real-world performance.</li>
+          <li data-en="<strong>Feature matrix:</strong> rows = samples; columns = features." data-de="<strong>Merkmalsmatrix:</strong> Zeilen = Proben; Spalten = Merkmale."><strong>Feature matrix:</strong> rows = samples; columns = features.</li>
+          <li data-en="<strong>Label:</strong> the thing we predict (e.g., tumor type)." data-de="<strong>Label:</strong> das, was wir vorhersagen (z.B. Tumortyp)."><strong>Label:</strong> the thing we predict (e.g., tumor type).</li>
+          <li data-en="<strong>Cross-validation:</strong> repeated splits to estimate real-world performance." data-de="<strong>Kreuzvalidierung:</strong> wiederholte Aufteilungen zur Schätzung der realen Leistung."><strong>Cross-validation:</strong> repeated splits to estimate real-world performance.</li>
         </ul>
       </div>
     </section>
 
     <section id="cancer-bio">
-      <h2>Cancer Biology — unraveling cellular complexity</h2>
+      <h2 data-en="Cancer Biology — unraveling cellular complexity" data-de="Krebsbiologie — Entschlüsselung zellulärer Komplexität">Cancer Biology — unraveling cellular complexity</h2>
       <div class="grid">
         <article class="tile"><div class="pad">
-          <span class="pill">Idea</span>
-          <h3>Hallmarks of Cancer</h3>
-          <p class="small">Understanding shared characteristics like uncontrolled proliferation and evasion of growth suppressors.</p>
+          <span class="pill" data-en="Idea" data-de="Idee">Idea</span>
+          <h3 data-en="Hallmarks of Cancer" data-de="Krebsmerkmale">Hallmarks of Cancer</h3>
+          <p class="small" data-en="Understanding shared characteristics like uncontrolled proliferation and evasion of growth suppressors." data-de="Verständnis gemeinsamer Merkmale wie unkontrollierte Proliferation und Umgehung von Wachstumsunterdrückern.">Understanding shared characteristics like uncontrolled proliferation and evasion of growth suppressors.</p>
         </div></article>
         <article class="tile"><div class="pad">
-          <span class="pill">Research</span>
-          <h3>Genomic & Epigenomic Shifts</h3>
-          <p class="small">Investigating mutations, copy number variations, and epigenetic modifications driving cancer development.</p>
+          <span class="pill" data-en="Research" data-de="Forschung">Research</span>
+          <h3 data-en="Genomic & Epigenomic Shifts" data-de="Genomische & Epigenomische Verschiebungen">Genomic & Epigenomic Shifts</h3>
+          <p class="small" data-en="Investigating mutations, copy number variations, and epigenetic modifications driving cancer development." data-de="Untersuchung von Mutationen, Kopienzahlvariationen und epigenetischen Modifikationen, die die Krebsentwicklung vorantreiben.">Investigating mutations, copy number variations, and epigenetic modifications driving cancer development.</p>
         </div></article>
         <article class="tile"><div class="pad">
-          <span class="pill">Therapy</span>
-          <h3>Targeting Pathways</h3>
-          <p class="small">Developing treatments that block specific molecular pathways crucial for cancer cell survival and growth.</p>
+          <span class="pill" data-en="Therapy" data-de="Therapie">Therapy</span>
+          <h3 data-en="Targeting Pathways" data-de="Zielgerichtete Signalwege">Targeting Pathways</h3>
+          <p class="small" data-en="Developing treatments that block specific molecular pathways crucial for cancer cell survival and growth." data-de="Entwicklung von Behandlungen, die spezifische molekulare Signalwege blockieren, die für das Überleben und Wachstum von Krebszellen entscheidend sind.">Developing treatments that block specific molecular pathways crucial for cancer cell survival and growth.</p>
         </div></article>
       </div>
     </section>
 
     <section id="ml-advances" class="twocol">
       <div class="card pad">
-        <h2>Current Advances in Machine Learning</h2>
-        <p class="small">
+        <h2 data-en="Current Advances in Machine Learning" data-de="Aktuelle Fortschritte im Maschinellen Lernen">Current Advances in Machine Learning</h2>
+        <p class="small" data-en="From foundation models to self-supervised learning, ML continues to push boundaries across various domains." data-de="Von Foundation Models bis hin zu selbstüberwachtem Lernen treibt ML weiterhin Grenzen in verschiedenen Bereichen voran.">
           From foundation models to self-supervised learning, ML continues to push boundaries across various domains.
         </p>
         <div class="rule"></div>
         <ul class="list small">
-          <li><strong>Generative AI:</strong> Large Language Models (LLMs) and diffusion models creating new content.</li>
-          <li><strong>Reinforcement Learning:</strong> Agent training in complex environments, like robotics and game playing.</li>
-          <li><strong>Explainable AI (XAI):</strong> Making black-box models more transparent and interpretable.</li>
+          <li data-en="<strong>Generative AI:</strong> Large Language Models (LLMs) and diffusion models creating new content." data-de="<strong>Generative KI:</strong> Large Language Models (LLMs) und Diffusionsmodelle, die neue Inhalte erstellen."><strong>Generative AI:</strong> Large Language Models (LLMs) and diffusion models creating new content.</li>
+          <li data-en="<strong>Reinforcement Learning:</strong> Agent training in complex environments, like robotics and game playing." data-de="<strong>Verstärkungslernen:</strong> Agententraining in komplexen Umgebungen, wie Robotik und Spielen."><strong>Reinforcement Learning:</strong> Agent training in complex environments, like robotics and game playing.</li>
+          <li data-en="<strong>Explainable AI (XAI):</strong> Making black-box models more transparent and interpretable." data-de="<strong>Erklärbare KI (XAI):</strong> Black-Box-Modelle transparenter und interpretierbarer machen."><strong>Explainable AI (XAI):</strong> Making black-box models more transparent and interpretable.</li>
         </ul>
       </div>
       <div class="card pad">
-        <h2>Frontier Applications</h2>
+        <h2 data-en="Frontier Applications" data-de="Grenzbereich-Anwendungen">Frontier Applications</h2>
         <ul class="list small">
-          <li><strong>Drug Discovery:</strong> Accelerating identification of new compounds and targets.</li>
-          <li><strong>Personalized Medicine:</strong> Tailoring treatments based on individual patient data.</li>
+          <li data-en="<strong>Drug Discovery:</strong> Accelerating identification of new compounds and targets." data-de="<strong>Arzneimittelentdeckung:</strong> Beschleunigung der Identifizierung neuer Verbindungen und Ziele."><strong>Drug Discovery:</strong> Accelerating identification of new compounds and targets.</li>
+          <li data-en="<strong>Personalized Medicine:</strong> Tailoring treatments based on individual patient data." data-de="<strong>Personalisierte Medizin:</strong> Anpassung von Behandlungen basierend auf individuellen Patientendaten."><strong>Personalized Medicine:</strong> Tailoring treatments based on individual patient data.</li>
         </ul>
       </div>
     </section>
 
     <section id="qml" class="twocol">
       <div class="card pad">
-        <h2>Quantum ML — a curious frontier</h2>
-        <p class="small">
+        <h2 data-en="Quantum ML — a curious frontier" data-de="Quanten-ML — eine neugierige Grenze">Quantum ML — a curious frontier</h2>
+        <p class="small" data-en="Quantum ideas (like superposition and entanglement) inspire models that may help with small, high-dimensional data. Hardware is early, but the playground is exciting." data-de="Quantenideen (wie Superposition und Verschränkung) inspirieren Modelle, die bei kleinen, hochdimensionalen Daten helfen könnten. Die Hardware ist früh, aber der Spielplatz ist aufregend.">
           Quantum ideas (like superposition and entanglement) inspire models that may help with small, high-dimensional data. Hardware is early, but the playground is exciting.
         </p>
       </div>
       <div class="card pad">
-        <h2>Where it’s heading</h2>
+        <h2 data-en="Where it's heading" data-de="Wohin es geht">Where it's heading</h2>
         <ul class="list small">
-          <li>Kernel methods and hybrid models are popular starting points.</li>
-          <li>Early studies explore materials, chips, and complex physical systems.</li>
-          <li>As devices improve, expect more practical bio/health demos.</li>
+          <li data-en="Kernel methods and hybrid models are popular starting points." data-de="Kernel-Methoden und hybride Modelle sind beliebte Ausgangspunkte.">Kernel methods and hybrid models are popular starting points.</li>
+          <li data-en="Early studies explore materials, chips, and complex physical systems." data-de="Frühe Studien erkunden Materialien, Chips und komplexe physikalische Systeme.">Early studies explore materials, chips, and complex physical systems.</li>
+          <li data-en="As devices improve, expect more practical bio/health demos." data-de="Mit verbesserten Geräten erwarten Sie praktischere Bio-/Gesundheitsdemos.">As devices improve, expect more practical bio/health demos.</li>
         </ul>
       </div>
     </section>
 
     <section class="image-section">
-      <h2>Visualizing the Future</h2>
-      <video controls style="max-width: 100%; height: auto; border-radius: var(--rad); box-shadow: var(--shadow); border: 1px solid var(--line);">
-        <source src="eltonugbogu_visualization.mov" type="video/quicktime">
-        Your browser does not support the video tag.
+      <h2 data-en="Visualizing the Future" data-de="Die Zukunft visualisieren">Visualizing the Future</h2>
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        width="100%"
+        poster="/assets/elton_poster.jpg"
+        style="max-width: 100%; height: auto; border-radius: var(--rad); box-shadow: var(--shadow); border: 1px solid var(--line);">
+        <source src="/eltonugbogu_visualization.mp4" type="video/mp4" />
+        <span data-en="Your browser does not support the video tag." data-de="Ihr Browser unterstützt das Video-Tag nicht.">Your browser does not support the video tag.</span>
       </video>
     </section>
 
     <section id="about" class="card pad">
-      <h2>About</h2>
-      <p class="small">
+      <h2 data-en="About" data-de="Über mich">About</h2>
+      <p class="small" data-en="I'm studying Bioinformatics at Universität Potsdam and I love machine learning." data-de="Ich studiere Bioinformatik an der Universität Potsdam und liebe maschinelles Lernen.">
         I'm studying Bioinformatics at Universität Potsdam and I love machine learning.
       </p>
     </section>
 
     <section id="contact" class="card pad">
-      <h2>Contact</h2>
-      <p class="small">Say hello: <a href="mailto:contact@eltonugbogu.com">contact@eltonugbogu.com</a></p>
+      <h2 data-en="Contact" data-de="Kontakt">Contact</h2>
+      <p class="small" data-en="Say hello: <a href='mailto:contact@eltonugbogu.com'>contact@eltonugbogu.com</a>" data-de="Sagen Sie Hallo: <a href='mailto:contact@eltonugbogu.com'>contact@eltonugbogu.com</a>">Say hello: <a href="mailto:contact@eltonugbogu.com">contact@eltonugbogu.com</a></p>
     </section>
 
     <footer>
       <p>© <span id="y"></span> Elton Ugbogu · Hosted on GitHub Pages</p>
     </footer>
   </div>
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <script>
+    document.getElementById('y').textContent=new Date().getFullYear();
+    
+    let currentLang = 'en';
+    
+    function toggleLanguage() {
+      currentLang = currentLang === 'en' ? 'de' : 'en';
+      const button = document.getElementById('lang-switch');
+      button.textContent = currentLang === 'en' ? 'DE' : 'EN';
+      
+      // Update all elements with data attributes
+      const elements = document.querySelectorAll('[data-en][data-de]');
+      elements.forEach(element => {
+        const text = element.getAttribute(`data-${currentLang}`);
+        if (text) {
+          element.innerHTML = text;
+        }
+      });
+      
+      // Update document language
+      document.documentElement.lang = currentLang;
+      
+      // Store preference
+      localStorage.setItem('preferred-language', currentLang);
+    }
+    
+    // Load saved language preference
+    const savedLang = localStorage.getItem('preferred-language');
+    if (savedLang && savedLang !== 'en') {
+      currentLang = savedLang;
+      const button = document.getElementById('lang-switch');
+      button.textContent = currentLang === 'en' ? 'DE' : 'EN';
+      
+      const elements = document.querySelectorAll('[data-en][data-de]');
+      elements.forEach(element => {
+        const text = element.getAttribute(`data-${currentLang}`);
+        if (text) {
+          element.innerHTML = text;
+        }
+      });
+      
+      document.documentElement.lang = currentLang;
+    }
+  </script>
 </body>
 </html>
