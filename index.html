@@ -8,17 +8,17 @@
   <link rel="canonical" href="https://eltonugbogu.com/">
   <style>
     :root{
-      --bg:#1a202c; /* Darker background inspired by DeepMind */
-      --ink:#e2e8f0; /* Lighter text for dark background */
-      --muted:#a0aec0; /* Muted text for dark background */
-      --line:#4a5568; /* Slightly lighter line for dark background */
-      --card:#2d3748; /* Darker card background */
-      --acc:#63b3ed; /* Softer blue accent */
+      --bg:#0a0a0a; /* Glossy dark black base */
+      --ink:#f8fafc; /* Crisp white text for contrast */
+      --muted:#94a3b8; /* Muted text with blue tint */
+      --line:#1e293b; /* Dark blue-gray lines */
+      --card:#111827; /* Glossy dark card background */
+      --acc:#3b82f6; /* Bright blue accent */
       --acc-ink:#ffffff; /* White ink on accent */
-      --grad1:#3182ce; /* Blue gradient for accents */
-      --grad2:#2c5282; /* Darker blue gradient */
+      --grad1:#1e40af; /* Deep glossy blue */
+      --grad2:#0f172a; /* Dark glossy black-blue */
       --rad:18px; --rad-sm:12px; --max:1120px;
-      --shadow:0 10px 30px rgba(0,0,0,.3); /* Stronger shadow for dark theme */
+      --shadow:0 20px 40px rgba(0,0,0,.6), 0 0 0 1px rgba(59,130,246,.1); /* Enhanced glossy shadow */
     }
     html, body {
       margin: 0;
@@ -27,10 +27,13 @@
       color: var(--ink);
       background: var(--bg);
       line-height: 1.6;
-      /* Glossy dark blue background */
-      background: radial-gradient(circle at top left, var(--grad1) 0%, var(--bg) 60%),
-                  radial-gradient(circle at bottom right, var(--grad2) 0%, var(--bg) 60%);
-      background-size: cover;
+      /* Glossy dark black and blue background */
+      background: 
+        radial-gradient(circle at 20% 20%, var(--grad1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, var(--grad2) 0%, transparent 50%),
+        radial-gradient(circle at 40% 60%, rgba(30,64,175,0.1) 0%, transparent 40%),
+        linear-gradient(135deg, var(--bg) 0%, #0f172a 100%);
+      background-size: 100% 100%, 100% 100%, 100% 100%, 100% 100%;
       background-attachment: fixed;
     }
     *{box-sizing:border-box}
@@ -39,7 +42,7 @@
     header{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
     nav a{margin-left:18px; font-weight:600; color:var(--muted)} nav a:hover{color:var(--acc); text-decoration:none;}
     .hero{display:grid; grid-template-columns: 1.1fr .9fr; gap:28px; align-items:center; margin-top:24px}
-    .card{background:var(--card); border-radius:var(--rad); box-shadow:var(--shadow); border:1px solid var(--line)}
+    .card{background:var(--card); border-radius:var(--rad); box-shadow:var(--shadow); border:1px solid var(--line); backdrop-filter: blur(10px); position: relative; overflow: hidden;}
     .pad{padding:28px}
     h1{font-size:44px; line-height:1.08; margin:0 0 10px; color:var(--ink)}
     p.lead{font-size:18px; color:var(--muted); margin-top:6px}
@@ -51,10 +54,10 @@
     .panel{height:100%; display:flex; align-items:center; justify-content:center; border-radius:var(--rad); position:relative; overflow:hidden}
     .grad{position:absolute; inset:0; background:linear-gradient(135deg,var(--grad1),var(--grad2)); opacity:.22} /* Increased opacity for effect */
     .grid{display:grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap:18px}
-    .tile{border-radius:var(--rad); border:1px solid var(--line); background:var(--card); transition: transform 0.2s ease, box-shadow 0.2s ease;}
-    .tile:hover {transform: translateY(-5px); box-shadow: 0 15px 40px rgba(0,0,0,.4);}
+    .tile{border-radius:var(--rad); border:1px solid var(--line); background:var(--card); transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; backdrop-filter: blur(10px); position: relative; overflow: hidden;}
+    .tile:hover {transform: translateY(-8px); box-shadow: 0 25px 50px rgba(0,0,0,.7), 0 0 0 1px rgba(59,130,246,.2); border-color: rgba(59,130,246,.3);}
     .tile .pad{padding:22px}
-    .pill{display:inline-flex; gap:8px; align-items:center; background:rgba(99,179,237,.15); color:var(--acc); padding:4px 10px; border-radius:999px; font-size:12px; font-weight:700}
+    .pill{display:inline-flex; gap:8px; align-items:center; background:rgba(59,130,246,.2); color:var(--acc); padding:4px 10px; border-radius:999px; font-size:12px; font-weight:700; border: 1px solid rgba(59,130,246,.3);}
     h2{font-size:26px; margin:0 0 8px; color:var(--ink)}
     section{margin-top:38px}
     .small{font-size:14px; color:var(--muted)}
