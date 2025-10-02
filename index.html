@@ -290,9 +290,8 @@
         playsinline
         preload="metadata"
         width="100%"
-        poster="/assets/elton_poster.jpg"
         style="max-width: 100%; height: auto; border-radius: var(--rad); box-shadow: var(--shadow); border: 1px solid var(--line);">
-        <source src="/eltonugbogu_visualization.mp4" type="video/mp4" />
+        <source src="eltonugbogu_visualization.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </section>
@@ -314,48 +313,83 @@
     </footer>
   </div>
   <script>
-    document.getElementById('y').textContent=new Date().getFullYear();
+    // Initialize year
+    const yearElement = document.getElementById('y');
+    if (yearElement) {
+      yearElement.textContent = new Date().getFullYear();
+    }
     
     let currentLang = 'en';
     
     function toggleLanguage() {
-      currentLang = currentLang === 'en' ? 'de' : 'en';
-      const button = document.getElementById('lang-switch');
-      button.textContent = currentLang === 'en' ? 'DE' : 'EN';
-      
-      // Update all elements with data attributes
-      const elements = document.querySelectorAll('[data-en][data-de]');
-      elements.forEach(element => {
-        const text = element.getAttribute(`data-${currentLang}`);
-        if (text) {
-          element.innerHTML = text;
+      try {
+        currentLang = currentLang === 'en' ? 'de' : 'en';
+        const button = document.getElementById('lang-switch');
+        if (button) {
+          button.textContent = currentLang === 'en' ? 'DE' : 'EN';
         }
-      });
-      
-      // Update document language
-      document.documentElement.lang = currentLang;
-      
-      // Store preference
-      localStorage.setItem('preferred-language', currentLang);
+        
+        // Update all elements with data attributes
+        const elements = document.querySelectorAll('[data-en][data-de]');
+        elements.forEach(element => {
+          const text = element.getAttribute(`data-${currentLang}`);
+          if (text) {
+            element.innerHTML = text;
+          }
+        });
+        
+        // Update document language
+        document.documentElement.lang = currentLang;
+        
+        // Store preference
+        localStorage.setItem('preferred-language', currentLang);
+      } catch (error) {
+        console.error('Error in toggleLanguage:', error);
+      }
     }
     
     // Load saved language preference
-    const savedLang = localStorage.getItem('preferred-language');
-    if (savedLang && savedLang !== 'en') {
-      currentLang = savedLang;
-      const button = document.getElementById('lang-switch');
-      button.textContent = currentLang === 'en' ? 'DE' : 'EN';
-      
-      const elements = document.querySelectorAll('[data-en][data-de]');
-      elements.forEach(element => {
-        const text = element.getAttribute(`data-${currentLang}`);
-        if (text) {
-          element.innerHTML = text;
+    try {
+      const savedLang = localStorage.getItem('preferred-language');
+      if (savedLang && savedLang !== 'en') {
+        currentLang = savedLang;
+        const button = document.getElementById('lang-switch');
+        if (button) {
+          button.textContent = currentLang === 'en' ? 'DE' : 'EN';
         }
-      });
-      
-      document.documentElement.lang = currentLang;
+        
+        const elements = document.querySelectorAll('[data-en][data-de]');
+        elements.forEach(element => {
+          const text = element.getAttribute(`data-${currentLang}`);
+          if (text) {
+            element.innerHTML = text;
+          }
+        });
+        
+        document.documentElement.lang = currentLang;
+      }
+    } catch (error) {
+      console.error('Error loading language preference:', error);
     }
+    
+    // Video error handling
+    document.addEventListener('DOMContentLoaded', function() {
+      const video = document.querySelector('video');
+      if (video) {
+        video.addEventListener('error', function(e) {
+          console.error('Video error:', e);
+          console.log('Video src:', video.querySelector('source')?.src);
+        });
+        
+        video.addEventListener('loadstart', function() {
+          console.log('Video loading started');
+        });
+        
+        video.addEventListener('canplay', function() {
+          console.log('Video can play');
+        });
+      }
+    });
   </script>
 </body>
 </html>
