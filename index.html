@@ -121,7 +121,94 @@
       * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
     }
 
-    @media (max-width:920px){ .hero{grid-template-columns:1fr} .grid{grid-template-columns:1fr} .twocol{grid-template-columns:1fr} }
+    /* Mobile optimizations */
+    @media (max-width:920px){ 
+      .hero{grid-template-columns:1fr} 
+      .grid{grid-template-columns:1fr} 
+      .twocol{grid-template-columns:1fr} 
+    }
+    
+    /* Portrait mobile optimizations */
+    @media (max-width:768px) and (orientation: portrait) {
+      .wrap { padding: 16px 12px 60px; }
+      header { flex-direction: column; align-items: flex-start; gap: 16px; padding: 8px 0; }
+      nav { 
+        width: 100%; 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 8px; 
+        margin-top: 8px;
+      }
+      nav a { 
+        margin-left: 0; 
+        font-size: 13px; 
+        padding: 8px 4px; 
+        text-align: center; 
+        border-radius: 8px; 
+        background: rgba(59,130,246,0.05); 
+        border: 1px solid rgba(59,130,246,0.1);
+        transition: all 0.2s ease;
+      }
+      nav a:hover { 
+        background: rgba(59,130,246,0.1); 
+        border-color: rgba(59,130,246,0.2);
+      }
+      #lang-switch { 
+        margin-left: 0; 
+        font-size: 13px; 
+        padding: 8px 12px; 
+        grid-column: span 3; 
+        justify-self: center; 
+        margin-top: 8px;
+        background: rgba(59,130,246,0.1);
+        border: 1px solid rgba(59,130,246,0.2);
+      }
+      h1 { font-size: 32px; line-height: 1.1; }
+      .lead { font-size: 16px; }
+      .card { border-radius: 12px; }
+      .pad { padding: 20px; }
+      .tile .pad { padding: 16px; }
+      .btn { padding: 10px 14px; font-size: 14px; }
+      .cta { gap: 8px; }
+      section { margin-top: 24px; }
+      .pill { font-size: 11px; padding: 3px 8px; }
+      h2 { font-size: 22px; }
+      h3 { font-size: 18px; }
+      .small { font-size: 13px; }
+      .avatar { width: 48px; height: 48px; }
+      .image-section { margin-top: 24px; }
+      video { border-radius: 12px; }
+    }
+    
+    /* Small portrait phones */
+    @media (max-width:480px) and (orientation: portrait) {
+      .wrap { padding: 12px 8px 50px; }
+      header { gap: 12px; }
+      nav { 
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 6px; 
+      }
+      nav a { 
+        font-size: 12px; 
+        padding: 6px 2px; 
+        border-radius: 6px; 
+      }
+      #lang-switch { 
+        font-size: 12px; 
+        padding: 6px 10px; 
+        grid-column: span 2; 
+        margin-top: 6px;
+      }
+      h1 { font-size: 28px; }
+      .lead { font-size: 15px; }
+      .pad { padding: 16px; }
+      .tile .pad { padding: 14px; }
+      .btn { padding: 8px 12px; font-size: 13px; }
+      h2 { font-size: 20px; }
+      h3 { font-size: 16px; }
+      .small { font-size: 12px; }
+      .avatar { width: 44px; height: 44px; }
+    }
   </style>
 </head>
 <body>
@@ -149,7 +236,9 @@
         <button id="lang-switch"
           type="button"
           aria-label="Switch language"
-          style="margin-left:18px; background:none; border:none; color:var(--muted); font-weight:600; cursor:pointer; font-size:inherit; font-family:inherit;"
+          style="margin-left:18px; background:none; border:none; color:var(--muted); font-weight:600; cursor:pointer; font-size:inherit; font-family:inherit; padding:4px 8px; border-radius:6px; transition:background-color 0.2s ease;"
+          onmouseover="this.style.backgroundColor='rgba(59,130,246,0.1)'"
+          onmouseout="this.style.backgroundColor='transparent'"
           onclick="toggleLanguage()">DE</button>
       </nav>
     </header>
